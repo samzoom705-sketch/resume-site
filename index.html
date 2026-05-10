@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Adam White 的个人简历网站">
   <title>Adam White | Resume</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +16,9 @@
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#profile">简介</a>
+        <a href="#highlights">亮点</a>
         <a href="#education">教育</a>
+        <a href="#experience">经历</a>
         <a href="#skills">能力</a>
         <a href="#contact">联系</a>
       </nav>
@@ -30,17 +29,17 @@
         <div class="hero-copy" data-reveal>
           <p class="eyebrow">Personal Resume</p>
           <h1 id="hero-title">Adam White</h1>
-          <p class="hero-subtitle">华侨大学学生，专注于清晰表达、持续学习与可靠执行。</p>
+          <p class="hero-subtitle">华侨大学学生，关注产品思维、内容表达、数据整理与前端基础实践。</p>
           <div class="hero-actions">
             <a class="button button-primary" href="mailto:roryt705@gmail.com">发送邮件</a>
-            <a class="button button-secondary" href="#profile">查看简历</a>
+            <a class="button button-secondary" href="#experience">查看经历</a>
           </div>
         </div>
 
         <aside class="hero-panel glass-card" aria-label="Resume overview" data-reveal>
           <div class="status-line">
             <span class="status-dot"></span>
-            Available for opportunities
+            Open to internships and projects
           </div>
           <dl class="quick-facts">
             <div>
@@ -59,15 +58,44 @@
         </aside>
       </section>
 
-      <section id="profile" class="section" data-reveal>
+      <section id="profile" class="section profile-layout" data-reveal>
         <div class="section-heading">
           <p class="eyebrow">Profile</p>
           <h2>个人简介</h2>
         </div>
         <div class="glass-card content-card">
           <p>
-            我是 Adam White，目前就读于华侨大学。这个网站以简洁、克制和高质感为核心，呈现基础信息、教育背景、能力方向与联系方式，适合直接部署为个人在线简历。
+            我是 Adam White，目前就读于华侨大学。对数字产品、网页设计和信息表达有持续兴趣，习惯用结构化方式整理问题，并通过小项目把想法落地。希望在产品运营、内容策划、前端基础开发或项目助理方向积累更多实践经验。
           </p>
+        </div>
+      </section>
+
+      <section id="highlights" class="section" data-reveal>
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Highlights</p>
+          <h2>简历亮点</h2>
+        </div>
+        <div class="stats-grid">
+          <article class="glass-card stat-card">
+            <span>01</span>
+            <strong>项目意识</strong>
+            <p>能够从目标、用户、内容、交付四个角度拆解任务，推动作品完成。</p>
+          </article>
+          <article class="glass-card stat-card">
+            <span>02</span>
+            <strong>表达能力</strong>
+            <p>擅长整理资料、撰写说明文档，并把复杂信息转化成清晰页面。</p>
+          </article>
+          <article class="glass-card stat-card">
+            <span>03</span>
+            <strong>数字技能</strong>
+            <p>熟悉 Office、基础网页制作、GitHub Pages 部署和轻量级数据整理。</p>
+          </article>
+          <article class="glass-card stat-card">
+            <span>04</span>
+            <strong>审美判断</strong>
+            <p>关注简洁版式、视觉层级、留白和细节统一，偏好高级克制的设计。</p>
+          </article>
         </div>
       </section>
 
@@ -80,10 +108,94 @@
           <div class="timeline-item">
             <span class="timeline-dot"></span>
             <div>
+              <p class="meta">University</p>
               <h3>华侨大学</h3>
-              <p>本科阶段学习经历</p>
+              <p>本科阶段学习经历。重点关注通识能力、商业理解、数字工具应用与跨文化沟通。</p>
+              <ul class="detail-list">
+                <li>参与课程展示、资料整理和小组汇报，负责内容结构与视觉呈现。</li>
+                <li>持续学习网页基础、产品文档写作和线上作品集搭建。</li>
+                <li>能够使用中英文完成基础沟通、资料阅读与内容整理。</li>
+              </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>经历与项目</h2>
+        </div>
+        <div class="project-grid">
+          <article class="glass-card project-card">
+            <p class="meta">Web Project</p>
+            <h3>个人简历网站设计与部署</h3>
+            <p>独立完成静态个人网站的内容结构、视觉风格和 GitHub Pages 部署，页面采用无照片、玻璃卡片、响应式布局。</p>
+            <ul class="detail-list">
+              <li>梳理首页、教育、经历、能力和联系模块。</li>
+              <li>使用 HTML、CSS、JavaScript 实现滚动动效与移动端适配。</li>
+              <li>完成 Git 提交、远程仓库推送和 GitHub Pages 发布。</li>
+            </ul>
+            <ul class="tag-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>GitHub Pages</li>
+            </ul>
+          </article>
+          <article class="glass-card project-card">
+            <p class="meta">Campus Practice</p>
+            <h3>校园活动内容策划</h3>
+            <p>参与校园活动的前期资料整理、流程规划和宣传文案撰写，协助团队把活动信息转化为易理解的展示内容。</p>
+            <ul class="detail-list">
+              <li>整理活动目标、时间安排、分工清单和物料需求。</li>
+              <li>优化宣传文字，让标题、说明和报名信息更清晰。</li>
+              <li>协助复盘活动执行过程，总结可改进事项。</li>
+            </ul>
+            <ul class="tag-list">
+              <li>策划</li>
+              <li>沟通</li>
+              <li>执行</li>
+            </ul>
+          </article>
+          <article class="glass-card project-card">
+            <p class="meta">Course Project</p>
+            <h3>课程调研与展示项目</h3>
+            <p>在课程小组项目中负责信息收集、内容框架和展示页面整理，将调研结论压缩成可汇报的视觉结构。</p>
+            <ul class="detail-list">
+              <li>收集并筛选公开资料，形成主题提纲。</li>
+              <li>制作演示结构，突出问题、分析和结论。</li>
+              <li>配合团队完成课堂展示与问答准备。</li>
+            </ul>
+            <ul class="tag-list">
+              <li>调研</li>
+              <li>展示</li>
+              <li>协作</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Credentials</p>
+          <h2>证书与荣誉</h2>
+        </div>
+        <div class="credential-grid">
+          <article class="glass-card credential-card">
+            <span>Certificate</span>
+            <h3>Office 办公软件应用</h3>
+            <p>熟悉文档排版、表格整理和演示文稿制作，可支持日常学习、汇报和项目协作。</p>
+          </article>
+          <article class="glass-card credential-card">
+            <span>Language</span>
+            <h3>英语资料阅读与基础沟通</h3>
+            <p>能够阅读英文网页、产品说明和课程材料，并完成基础英文邮件与文字表达。</p>
+          </article>
+          <article class="glass-card credential-card">
+            <span>Recognition</span>
+            <h3>课程展示优秀小组成员</h3>
+            <p>在课程展示中承担内容结构和视觉整理工作，帮助团队提升汇报完成度。</p>
+          </article>
         </div>
       </section>
 
@@ -95,20 +207,46 @@
         <div class="skills-grid">
           <article class="glass-card skill-card">
             <span>01</span>
-            <h3>学习能力</h3>
-            <p>保持开放、快速吸收新知识，并将复杂信息整理成清晰结构。</p>
+            <h3>信息整理</h3>
+            <p>能够从大量资料中提炼重点，形成条理清楚的文档、表格和展示结构。</p>
           </article>
           <article class="glass-card skill-card">
             <span>02</span>
-            <h3>沟通表达</h3>
-            <p>重视准确、简洁、有条理的表达，适合协作场景与项目汇报。</p>
+            <h3>网页基础</h3>
+            <p>掌握 HTML、CSS 和基础 JavaScript，能够搭建轻量级静态页面并部署上线。</p>
           </article>
           <article class="glass-card skill-card">
             <span>03</span>
-            <h3>执行意识</h3>
-            <p>关注细节与交付质量，习惯把目标拆解为可以推进的步骤。</p>
+            <h3>沟通协作</h3>
+            <p>重视反馈、节奏和交付质量，适合在小组项目中承担协调与内容推进工作。</p>
           </article>
         </div>
+      </section>
+
+      <section class="section two-column-section" data-reveal>
+        <article class="glass-card info-card">
+          <p class="eyebrow">Tools</p>
+          <h2>工具栈</h2>
+          <div class="pill-row">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>GitHub</span>
+            <span>Office</span>
+            <span>Canva</span>
+          </div>
+        </article>
+        <article class="glass-card info-card">
+          <p class="eyebrow">Interests</p>
+          <h2>兴趣方向</h2>
+          <div class="pill-row">
+            <span>个人网站</span>
+            <span>产品体验</span>
+            <span>内容策划</span>
+            <span>视觉设计</span>
+            <span>数字表达</span>
+          </div>
+        </article>
       </section>
 
       <section id="contact" class="section contact-section" data-reveal>

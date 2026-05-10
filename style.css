@@ -22,7 +22,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "Inter", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
   color: var(--text);
   background:
     radial-gradient(circle at 18% 12%, rgba(129, 140, 248, 0.2), transparent 30%),
@@ -253,14 +253,18 @@ h3 {
 }
 
 .content-card,
-.timeline {
+.timeline,
+.info-card {
   padding: clamp(24px, 4vw, 42px);
 }
 
 .content-card p,
 .contact-copy p,
 .skill-card p,
-.timeline p {
+.timeline p,
+.stat-card p,
+.project-card p,
+.credential-card p {
   color: var(--muted);
   line-height: 1.8;
 }
@@ -276,6 +280,43 @@ h3 {
   grid-template-columns: 0.8fr 1.2fr;
   align-items: start;
   gap: 36px;
+}
+
+.compact-heading {
+  max-width: 760px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.stat-card {
+  min-height: 220px;
+  padding: 24px;
+  box-shadow: var(--shadow-soft);
+}
+
+.stat-card span,
+.meta {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.stat-card strong {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.stat-card p {
+  margin-bottom: 0;
 }
 
 .timeline-item {
@@ -294,8 +335,88 @@ h3 {
   box-shadow: 0 0 0 10px rgba(17, 24, 39, 0.08);
 }
 
-.timeline h3,
-.timeline p {
+.timeline h3 {
+  margin-bottom: 10px;
+}
+
+.timeline p:last-child {
+  margin-bottom: 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.project-card {
+  display: flex;
+  min-height: 460px;
+  flex-direction: column;
+  padding: 28px;
+  box-shadow: var(--shadow-soft);
+}
+
+.project-card p:not(.meta) {
+  margin-bottom: 18px;
+}
+
+.detail-list {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 24px;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.detail-list li::marker {
+  color: #2563eb;
+}
+
+.tag-list,
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: auto 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-list li,
+.pill-row span {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.64);
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.credential-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.credential-card {
+  padding: 28px;
+  box-shadow: var(--shadow-soft);
+}
+
+.credential-card span {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.credential-card p {
   margin-bottom: 0;
 }
 
@@ -319,6 +440,21 @@ h3 {
 
 .skill-card p {
   margin-bottom: 0;
+}
+
+.two-column-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.info-card h2 {
+  margin-bottom: 28px;
+  font-size: clamp(1.8rem, 3vw, 3.1rem);
+}
+
+.info-card .pill-row {
+  margin-top: 0;
 }
 
 .contact-section {
@@ -360,7 +496,10 @@ h3 {
 
 @media (max-width: 900px) {
   .hero,
-  .split-section {
+  .split-section,
+  .project-grid,
+  .two-column-section,
+  .credential-grid {
     grid-template-columns: 1fr;
   }
 
@@ -369,7 +508,8 @@ h3 {
     padding-top: 28px;
   }
 
-  .skills-grid {
+  .skills-grid,
+  .stats-grid {
     grid-template-columns: 1fr;
   }
 
