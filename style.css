@@ -190,6 +190,33 @@ h3 {
   background: rgba(255, 255, 255, 0.64);
 }
 
+.inline-next {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22px;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.62);
+  color: #2563eb;
+  font-size: 0.95rem;
+  font-weight: 800;
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.07);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.inline-next:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.1);
+}
+
+.section-next {
+  margin-top: 24px;
+}
+
 .glass-card {
   border: 1px solid rgba(255, 255, 255, 0.74);
   border-radius: var(--radius);
