@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adam White 的个人简历网站">
+  <title>Adam White | Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header" data-reveal>
+      <a class="brand" href="#top" aria-label="Adam White home">
+        <span class="brand-mark">AW</span>
+        <span>Adam White</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#profile">简介</a>
+        <a href="#education">教育</a>
+        <a href="#skills">能力</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Personal Resume</p>
+          <h1 id="hero-title">Adam White</h1>
+          <p class="hero-subtitle">华侨大学学生，专注于清晰表达、持续学习与可靠执行。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="mailto:roryt705@gmail.com">发送邮件</a>
+            <a class="button button-secondary" href="#profile">查看简历</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel glass-card" aria-label="Resume overview" data-reveal>
+          <div class="status-line">
+            <span class="status-dot"></span>
+            Available for opportunities
+          </div>
+          <dl class="quick-facts">
+            <div>
+              <dt>姓名</dt>
+              <dd>Adam White</dd>
+            </div>
+            <div>
+              <dt>学校</dt>
+              <dd>华侨大学</dd>
+            </div>
+            <div>
+              <dt>邮箱</dt>
+              <dd><a href="mailto:roryt705@gmail.com">roryt705@gmail.com</a></dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section id="profile" class="section" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Profile</p>
+          <h2>个人简介</h2>
+        </div>
+        <div class="glass-card content-card">
+          <p>
+            我是 Adam White，目前就读于华侨大学。这个网站以简洁、克制和高质感为核心，呈现基础信息、教育背景、能力方向与联系方式，适合直接部署为个人在线简历。
+          </p>
+        </div>
+      </section>
+
+      <section id="education" class="section split-section">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Education</p>
+          <h2>教育背景</h2>
+        </div>
+        <div class="timeline glass-card" data-reveal>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div>
+              <h3>华侨大学</h3>
+              <p>本科阶段学习经历</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Capabilities</p>
+          <h2>能力方向</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="glass-card skill-card">
+            <span>01</span>
+            <h3>学习能力</h3>
+            <p>保持开放、快速吸收新知识，并将复杂信息整理成清晰结构。</p>
+          </article>
+          <article class="glass-card skill-card">
+            <span>02</span>
+            <h3>沟通表达</h3>
+            <p>重视准确、简洁、有条理的表达，适合协作场景与项目汇报。</p>
+          </article>
+          <article class="glass-card skill-card">
+            <span>03</span>
+            <h3>执行意识</h3>
+            <p>关注细节与交付质量，习惯把目标拆解为可以推进的步骤。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section" data-reveal>
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>保持联系</h2>
+          <p>欢迎通过邮件联系我，了解更多学习经历、项目方向或合作机会。</p>
+        </div>
+        <a class="button button-primary" href="mailto:roryt705@gmail.com">roryt705@gmail.com</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Adam White. Built for GitHub Pages.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
